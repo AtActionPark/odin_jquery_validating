@@ -4,6 +4,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="scripts/jquery.validate.js"></script>
+    <script src="scripts/main.js"></script>
   </head>
 
   <body>
@@ -30,18 +33,17 @@
       <div id="content">
         <div id="signupBody">
           <h1>Create a new account</h1>
+          <div class="submit-error">Oops! Please fix the problem with the <span></span> below</div>
           <div id="left-column">
             <form id="form-signup" method="post">
               <ol>
                 <li>
                   <label for="username">Your Email</label>
-                  <input class="stdInput" id="username" name="email" type="text">
-                  <div class="errorMessage"></div>
+                  <input class="stdInput" id="username" name="username" type="email" autofocus>
                 </li>
                 <li>
                   <label for="username-confirm">Confirm Email</label>
-                  <input class="stdInput" id="username-confirm" name="email-confirm" type="text">
-                  <div class="errorMessage"></div>
+                  <input class="stdInput" id="username-confirm" name="username-confirm" type="text" >
                 </li>
                 <li>
                   <label for="country">Country</label>
@@ -51,22 +53,18 @@
                       <option value="CA">Canada</option>
                     </optgroup>
                   </select>
-                  <div class="errorMessage"></div>
                 </li>
                 <li>
                   <label for="zipcode">Zip Code</label>
-                  <input class="stdInput" id="zipcode" name="zipcode" type="text">
-                  <div class="errorMessage"></div>
+                  <input  class="stdInput" id="zipcode" name="zipcode" type="text">
                 </li>
                 <li>
                   <label for="password">Password</label>
                   <input class="stdInput" id="password" name="password" type="password">
-                  <div class="errorMessage"></div>
                 </li>
                 <li>
-                  <label for="password2">Confirm Password</label>
-                  <input class="stdInput" id="password2" name="password2" type="password">
-                  <div class="errorMessage"></div>
+                  <label for="password-confirm">Confirm Password</label>
+                  <input class="stdInput" id="password-confirm" name="password-confirm" type="password">
                 </li>
                 <li id="terms-checkbox">
                   <input id="terms" name="terms" type="checkbox">
@@ -106,5 +104,6 @@
         </p>
       </div>
     </div>
+
   </body>
 </html>
