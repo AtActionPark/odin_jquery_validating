@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <div id="logo-and-tab">
+          <div id="logo">
+            <a id="logo-link" href="https://www.mint.com"></a>
+          </div>
+          <div id="tabs">
+            <h2>
+              <ul>
+                <li id="signup">
+                  <a id="signupButton" href="">Sign up</a>
+                </li>
+                <li id="login">
+                  <a id="loginButton"href="">Log in</a>
+                </li>
+              </ul>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div id="signupBody">
+          <h1>Create a new account</h1>
+          <div id="left-column">
+            <form id="form-signup" method="post">
+              <ol>
+                <li>
+                  <label for="username">Your Email</label>
+                  <input class="stdInput" id="username" name="email" type="text">
+                  <div class="errorMessage"></div>
+                </li>
+                <li>
+                  <label for="username-confirm">Confirm Email</label>
+                  <input class="stdInput" id="username-confirm" name="email-confirm" type="text">
+                  <div class="errorMessage"></div>
+                </li>
+                <li>
+                  <label for="country">Country</label>
+                  <select class="stdInput" id="country" name="country">
+                    <optgroup class="available-countries">
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                    </optgroup>
+                  </select>
+                  <div class="errorMessage"></div>
+                </li>
+                <li>
+                  <label for="zipcode">Zip Code</label>
+                  <input class="stdInput" id="zipcode" name="zipcode" type="text">
+                  <div class="errorMessage"></div>
+                </li>
+                <li>
+                  <label for="password">Password</label>
+                  <input class="stdInput" id="password" name="password" type="password">
+                  <div class="errorMessage"></div>
+                </li>
+                <li>
+                  <label for="password2">Confirm Password</label>
+                  <input class="stdInput" id="password2" name="password2" type="password">
+                  <div class="errorMessage"></div>
+                </li>
+                <li id="terms-checkbox">
+                  <input id="terms" name="terms" type="checkbox">
+                  <label id="terms-label" for="form-signup-terms">Yes, I agree to the Mint </label>
+                  <a href="https://www.mint.com/how-it-works/security/terms/" target="_blank">Terms of Use</a>
+                </li>
+              </ol>
+              <input type="submit" id="blueButton" name="blueButton" value="SIGN UP">
+            </form>
+          </div>
+          <div id="right-column">
+            <div id="generic-tips">
+              <h2>Why you'll love it</h2>
+              <ul>
+                <li>See all your accounts in one place</li>
+                <li>Set a budget and pay down your debt</li>
+                <li>Find the best ways to grow your money</li>
+                <li>Stay <a href="http://www.mint.com/privacy/" id="signup-privacy">safe and secure</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div id="bodyFooter">
+        <div id="secondary-links">
+          <a id="body-footer-help"  href="https://mint.lc.intuit.com/">Support Community</a>
+          <a id="footer-safe"  href="http://www.mint.com/terms">Terms of Use </a>
+          <a id="footer-privacy" target="_blank" href="http://www.mint.com/privacy"> Privacy</a>
+          <a id="footer-terms"  href="http://about.intuit.com/legal/" >Legal and Trademark Notices </a>
+          <a id="about-us"  href="http://about.intuit.com/about_intuit/" class="last">About Intuit</a>
+        </div>
+        <p id="copyright">
+          <span> © 2015 Intuit, Inc.</span>
+          <span class="last" id="buildNumber">ph6944.13 - spa56.15</span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -17,3 +17,5 @@ Do all this using [jQuery's Validate plugin](http://jqueryvalidation.org/) but t
 3. Build the validation logic.
 4. Test out all possible cases.
 5. Push your solution to Github and submit it below.
+
+[html preview](http://htmlpreview.github.io/?https://github.com/AtActionPark/odin_jquery_validating/blob/master/index.html)
