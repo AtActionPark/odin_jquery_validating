@@ -102,11 +102,12 @@ body{
 
 #tabs a{
   text-decoration: none;
+  color:black;
+  font-size: 15px;
 }
 
 #tabs a:visited{
   color:black;
-  font-size: 15px;
 }
 
 #signupButton{
